@@ -42,9 +42,13 @@ Output:
 
 In this approach, each user object has its own copy of the ```display``` function. This leads to inefficient memory usage, especially when creating many user objects.
 
+
+
 ## Creating Users with `Object.create()`
 
 To address the memory inefficiency, we use ```Object.create()```. This method creates a new object with a specified prototype object, which allows all users to share the same methods defined in the ***prototype***, thus saving memory.```Object.create()``` create new object using existing object passed as an argument or we can pass null in the argument
+
+
 
 ### Prototype Object: `showInformation`
 
@@ -103,6 +107,8 @@ Output:
     + [[Prototype]]: Object
 ```
 
+
+
 ### Prototype Chain in Action
 
 When we call ```user1.display()```, the JavaScript engine performs the following steps:
@@ -111,12 +117,14 @@ When we call ```user1.display()```, the JavaScript engine performs the following
 2. If it doesn't find `display` on `user1`, it checks the `[[Prototype]]` property of `user1`, which points to `showInformation`.
 3. It finds the `display` method in the `showInformation` object and executes it.
 
+
+
 ### Inspecting the Prototype
 
 You can view the prototype object using the `__proto__` property or the `Object.getPrototypeOf()` method:
 
 ```js
-console.log(user1.__proto__);
+console.log(user1.__proto__); //legacy feature & not recommended
 // or
 console.log(Object.getPrototypeOf(user1));
 
