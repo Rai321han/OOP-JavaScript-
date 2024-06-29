@@ -23,7 +23,7 @@ function userCreate(name, id) {
 }
 ```
 
-We can now create new user calling userCreate function and display the information invoking the display function on the user instance.
+We can now create new user calling ```userCreate``` function and display the information invoking the display function on the user instance.
 
 ```js
 const user1 = userCreate("Raihan", 1911023);
@@ -40,11 +40,15 @@ Output:
 - display: function () { ... }
 ```
 
-In this approach, each user object has its own copy of the `display` function. This leads to inefficient memory usage, especially when creating many user objects.
+In this approach, each user object has its own copy of the ```display``` function. This leads to inefficient memory usage, especially when creating many user objects.
+
+
 
 ## Creating Users with `Object.create()`
 
-To address the memory inefficiency, we use `Object.create()`. This method creates a new object with a specified prototype object, which allows all users to share the same methods defined in the prototype, thus saving memory. Object.create() create new object using existing object passed as an argument or we can pass null in the argument
+To address the memory inefficiency, we use ```Object.create()```. This method creates a new object with a specified prototype object, which allows all users to share the same methods defined in the ***prototype***, thus saving memory.```Object.create()``` create new object using existing object passed as an argument or we can pass null in the argument
+
+
 
 ### Prototype Object: `showInformation`
 
@@ -58,7 +62,7 @@ const showInformation = {
 
 We will talk about this keyword later. For now, just know that this refers to the object that calls this function.
 
-Let’s create a funciton called userCreate to create new user with a user’s name and id.
+Let’s create a funciton called ```userCreate``` to create new user with a user’s ```name``` and ```id```.
 
 ```js
 function userCreate(name, id) {
@@ -74,9 +78,8 @@ function userCreate(name, id) {
 }
 ```
 
-As we passed **_showInformation_** as argument to **_Object.create()_** function. The returned object that is, **_newUser_** will have a property which is a object, called **[[prototype]]**.
-And **_display_** function will be a method of that object.
-**[[prototype]]** object looks like:
+As we passed ```showInformation``` as argument of ```Object.create()``` function, the hidden property [[prototype]] of the returned object that is, ```newUser``` will be set to ```showInformation``` object.
+```[[prototype]]``` object looks like:
 
 ```js
 [[prototype]] : {
@@ -85,7 +88,7 @@ And **_display_** function will be a method of that object.
                 }
 ```
 
-using access method of object called **\_\_proto\_\_**, we can get the **[[prototype]]** object
+using property of the object, called ```__proto__```, we can get the ```[[prototype]]``` object
 
 ```js
 const user1 = userCreate("Raihan", 1911023);
@@ -104,20 +107,24 @@ Output:
     + [[Prototype]]: Object
 ```
 
+
+
 ### Prototype Chain in Action
 
-When we call `user1.display()`, the JavaScript engine performs the following steps:
+When we call ```user1.display()```, the JavaScript engine performs the following steps:
 
 1. It first looks for the `display` method on `user1` itself.
 2. If it doesn't find `display` on `user1`, it checks the `[[Prototype]]` property of `user1`, which points to `showInformation`.
 3. It finds the `display` method in the `showInformation` object and executes it.
+
+
 
 ### Inspecting the Prototype
 
 You can view the prototype object using the `__proto__` property or the `Object.getPrototypeOf()` method:
 
 ```js
-console.log(user1.__proto__);
+console.log(user1.__proto__); //legacy feature & not recommended
 // or
 console.log(Object.getPrototypeOf(user1));
 
