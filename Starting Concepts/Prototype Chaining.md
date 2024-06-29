@@ -74,8 +74,7 @@ function userCreate(name, id) {
 }
 ```
 
-As we passed ```showInformation``` as argument to ```Object.create()``` function. The returned object that is, ```newUser``` will have a property which is a object, called ```[[prototype]]```.
-And ```display``` function will be a method of that object.
+As we passed ```showInformation``` as argument of ```Object.create()``` function, the hidden property [[prototype]] of the returned object that is, ```newUser``` will be set to ```showInformation``` object.
 ```[[prototype]]``` object looks like:
 
 ```js
@@ -85,7 +84,7 @@ And ```display``` function will be a method of that object.
                 }
 ```
 
-using access method of object called ```__proto__```, we can get the ```[[prototype]]``` object
+using property of the object, called ```__proto__```, we can get the ```[[prototype]]``` object
 
 ```js
 const user1 = userCreate("Raihan", 1911023);
