@@ -56,7 +56,7 @@ const showInformation = {
 };
 ```
 
-We will talk about `_this_` keyword later. For now, just know that `_this_` refers to the object that invokes this function.
+We will talk about [this](/Starting%20Concepts/this_Keyword.md) keyword later. For now, just know that `_this_` refers to the object that invokes this function.
 
 Let’s create a funciton called `userCreate` to create new user with a user’s `name` and `id`.
 
@@ -84,23 +84,20 @@ As we passed `showInformation` as argument of `Object.create()` function, the hi
                 }
 ```
 
-using property of the object, called `__proto__`, we can get the `[[prototype]]` object
-
 ```js
 const user1 = userCreate("Raihan", 1911023);
 console.log(user1);
-user1.display();
-```
 
-Output:
-
-```
+/*
 {name: 'Raihan', id: 1911023}
-- id: 1911023
-- name: "Raihan"
+id: 1911023
+name: "Raihan"
 - [[Prototype]]: Object
-    - display: ƒ ()
+    display: ƒ ()
     + [[Prototype]]: Object
+*/
+user1.display();
+//Name: Raihan. ID: 1911023
 ```
 
 ### Prototype Chain in Action
