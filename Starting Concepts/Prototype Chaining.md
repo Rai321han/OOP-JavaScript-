@@ -40,7 +40,7 @@ Output:
 - display: function () { ... }
 ```
 
-In this approach, each user object has its own copy of the `display` function. This leads to inefficient memory usage, especially when creating many user objects.
+> :warning: **Warning:** In this approach, each user object has its own copy of the `display` function. This leads to inefficient memory usage, especially when creating many user objects.
 
 ## Creating Users with `Object.create()`
 
