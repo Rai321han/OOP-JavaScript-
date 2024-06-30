@@ -4,11 +4,14 @@ The goal of this project is to learn Object Oriented Programming in JavaScript a
 
 ## Topics
 
+---
+
 ### Starting Concepts
 
-- [x] [Prototype Chaining (Part 1)](/Starting%20Concepts/Prototype%20Chaining-part-1.md)
-- [ ] [Prototype Chaining (Part 2)](/Starting%20Concepts/Prototype%20Chaining-part-2.md)
-- [ ] _this_ keyword
+---
+
+- [x] [Prototype Chaining](/Starting%20Concepts/Prototype%20Chaining-part-1.md)
+- [x] [_this_ keyword](/Starting%20Concepts/this_Keyword.md)
 - [ ] _new_ keyword
 - [ ] Class and Object
 
