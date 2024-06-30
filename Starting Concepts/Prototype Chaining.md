@@ -56,7 +56,7 @@ const showInformation = {
 };
 ```
 
-We will talk about [this](/Starting%20Concepts/this_Keyword.md) keyword later. For now, just know that `_this_` refers to the object that invokes this function.
+We will talk about [this](/Starting%20Concepts/this_Keyword.md) keyword later. For now, just know that `this` refers to the object that invokes this function.
 
 Let’s create a funciton called `userCreate` to create new user with a user’s `name` and `id`.
 
