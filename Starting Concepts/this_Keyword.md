@@ -76,6 +76,53 @@ But some API implementation can take input to use as `this` when executing the c
 
 ### Arrow Function
 
+In regular function, the object that calls the function is refered by `this` keyword.
+But arrow functions handle this differentl.There is no binding of this in arrow function. They inherit `this`from the parent scope, if they are unable to find it in the current scope.
+This process is called lexical scoping.
+
+Now, let's see an example using regular function.
+
+```js
+const AnObject = {
+  func: function () {
+    return this;
+  },
+};
+AnObject.func(); //AnObject {}
+```
+
+Here, `func` is a regular function, so `this` keyword refers to the object `AnObject`. As we said, the object that calls the function is refered by `this` keyword.
+
+Now, let's see the next example using an arrow function as object method.
+
+```js
+const AnObject = {
+  arrowFunc: () => {
+    return this;
+  },
+};
+AnObject.arrowFunc(); //global or Window object
+```
+
+As expected, `this` keyword in the arrow function is refering to the global object. This is because unlike normal functions in arrow functions the value of this does not depend on the way a function is called.
+
+Now let's see the example in different approach. In this example, the `arrowFunc` method initializing `myArrowFunc`.
+
+```js
+const AnObject = {
+  myArrowFunc: null,
+  func: function () {
+    this.myArrowFunc = () => {
+      return this;
+    };
+  },
+};
+AnObject.func(); // to set the myArrowFunc
+AnObject.myArrowFunc(); //AnObject
+```
+
+`myArrowFunc` is initialized with an arrow function inside the `func`. As a result, `this` keyword of myArrowFunction inherit the scope of the `func`, which is `AnObject`.
+
 ### Constructors
 
 ## Class Context
