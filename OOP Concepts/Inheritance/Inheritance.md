@@ -87,7 +87,7 @@ Now as soon as we execute `const ford = new Ford("Ford")`, we'll get an error be
 ```js
 class Ford extends Car {
   constructor(name) {
-    super(); // parent constructor is invoked
+    super(); // parent constructor is invoked and 'this' is defined.
     this.name = name;
   }
   selfDrive() {
@@ -98,4 +98,4 @@ class Ford extends Car {
 const ford = new Ford("Ford"); // now it works!
 ```
 
-Next -> [Multilevel Inheritance](/OOP%20Concepts/Inheritance/Multilevel_Inheritance.md)
+Next -> [Aggregation & Composition](/OOP%20Concepts/Inheritance/Aggregation_&_Composition.md)
