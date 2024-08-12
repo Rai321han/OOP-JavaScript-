@@ -91,3 +91,5 @@ PanasonicTV.sound.soundOn();
 ```
 
 Now if we destroy the object `PanasonicTV`, the `sound` object will also be destroyed.
+
+Next -> [Polymorphism](/OOP%20Concepts//Polymorphism/Polymorphism.md)
