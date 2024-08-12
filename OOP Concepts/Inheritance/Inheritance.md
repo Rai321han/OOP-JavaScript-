@@ -1,9 +1,10 @@
 # Inheritance
 
 Inheritance in OOP is a way to inherit properties of a class to another.
-The former class is called the base class or parent class and the later class is called the child class
-In JavaScript although we see 'class' syntax, behind the scene everything is done using function and prototype chaining.
-'class' based syntax are just synthectical sugar you can say. But they improve legibility and programmer from other languages can find these syntax familiar.
+The former class is called the base class or parent/super class and the later class is called the child class.
+In JavaScript although we see `class` syntax, behind the scene everything is done using function and prototype chaining.
+`class` based syntax are just synthectical sugar you can say. But they improve legibility. Programmer from other languages can find these syntax familiar.
+
 Let's see how inheritance is done in JavaScript!
 
 First make a general Car class which is going to be a parent class.
@@ -49,3 +50,5 @@ And `Ford.prototype` has a `_proto_` property, that is set to `Car.prototype`.
 So even if we have not defined start and stop method in the Ford class, due to `extends` with the help of prototype chaining
 it finds the start and stop method from `Car.prototype`.
 So **Ford** class has **inherited** the properties of **Car** class.
+
+> : warning: Only Single inheritance is possible in JavaScript. One object can have only one [[Prototype]], so multiple inheritance is not possible. Still there is way to do this using `Mixin`. I'll cover this concept later.
