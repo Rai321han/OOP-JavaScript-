@@ -6,42 +6,72 @@
 // Let's see how inheritance is done in JavaScript!
 
 // First make a general Car class which is going to be a parent class.
-class Car {
-  constructor(name) {
-    this.name = "Car";
-  }
-  start() {
-    console.log(`${this.name} has started`);
-  }
-  stop() {
-    console.log(`${this.name} has stopped`);
-  }
-}
+// class Car {
+//   constructor(name) {
+//     this.name = "Car";
+//   }
+//   start() {
+//     console.log(`${this.name} has started`);
+//   }
+//   stop() {
+//     console.log(`${this.name} has stopped`);
+//   }
+// }
 
-const car = new Car("Car");
-car.start(); //Car has started
-car.stop(); //Car has stopped
+// const car = new Car("Car");
+// car.start(); //Car has started
+// car.stop(); //Car has stopped
 
 // Here Car.prototype has constructor, start and stop methods.
 // car's __proto__ is linked to the Car.prototype
 
 ///
-class Ford extends Car {
-  constructor(name) {
-    this.name = name;
-  }
-  selfDrive() {
-    console.log(`${this.name} is in self driving mode`);
-  }
-}
+// class Ford extends Car {
+//   constructor(name) {
+//     this.name = name;
+//   }
+//   selfDrive() {
+//     console.log(`${this.name} is in self driving mode`);
+//   }
+// }
 
-const ford = new Ford("Ford");
-ford.selfDrive(); // Ford is in self driving mode.
-ford.start(); // Ford has started
-ford.stop(); // Ford has stopped
+// const ford = new Ford("Ford");
+// ford.selfDrive(); // Ford is in self driving mode.
+// ford.start(); // Ford has started
+// ford.stop(); // Ford has stopped
 
 // In this case ford's __proto__ is set to Ford.prototype
 // And Ford.prototype has a __proto__ property, that is set to Car.prototype.
 // So even if we have not defined start and stop method in the Ford class, due to 'extends' with the help of prototype chaining
 // it finds the start and stop method from Car.prototype.
 // So Ford class has inherited the properties of Car class.
+
+// Aggregation
+
+class SoundSystem {
+  constructor(highestSound) {
+    this.highest = highestSound;
+  }
+  soundOn() {
+    console.log("Sound is on");
+  }
+
+  soundOff() {
+    console.log("Sound is off");
+  }
+}
+
+class TV {
+  constructor(highestSound) {
+    this.sound = new SoundSystem(highestSound);
+  }
+  turnOn() {
+    console.log("TV is turned on");
+  }
+  turnOff() {
+    console.log("TV is turned off");
+  }
+}
+
+const PanasonicTV = new TV(10);
+PanasonicTV.sound.soundOn();

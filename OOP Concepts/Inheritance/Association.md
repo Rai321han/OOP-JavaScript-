@@ -55,3 +55,39 @@ So destroying the `PanasonicSound` object doesn't affect the `PanasonicTV` as th
 <br/>
 
 ## 2. Composition
+
+In this type, objects are tightly coupled with each other. So if an object is destroyed, associated object will be destroyed too.
+
+Let's see an example:
+
+```js
+class SoundSystem {
+  constructor(highestSound) {
+    this.highest = highestSound;
+  }
+  soundOn() {
+    console.log("Sound is on");
+  }
+
+  soundOff() {
+    console.log("Sound is off");
+  }
+}
+
+class TV {
+  constructor(highestSound) {
+    this.sound = new SoundSystem(highestSound);
+  }
+  turnOn() {
+    console.log("TV is turned on");
+  }
+  turnOff() {
+    console.log("TV is turned off");
+  }
+}
+
+const PanasonicTV = new TV(10);
+PanasonicTV.sound.soundOn();
+```
+
+Now if we destroy the object `PanasonicTV`, the `sound` object will also be destroyed.
