@@ -56,10 +56,10 @@ So **Ford** class has **inherited** the properties of **Car** class.
 
 ## super keyword
 
-`super()` is used to invoke the superclass constructor.
+`super()` is used to invoke the superclass constructor. <br/>
 `super.<methodname>` is used to invoke the superclass method.
 
-Why do we need `super`?
+**Why do we need `super`?**
 
 In the above example, you can see that `Ford` class doesn't have constructor. If a child class doesn't have constructor and a object of that class is initiated, it's superclass constructor invokes automatically.
 
