@@ -3,7 +3,7 @@
 In the last topic, we learned one level single inheritance where a child class has one superclass but no grandparent class.
 In Multilevel Inheritance, a class can inherit properties from it's parent and also from gradparent and so on.
 
-That means, one level single inheritance refers to `Child Class -> Parent Class`
+That means, one level single inheritance refers to `Child Class -> Parent Class` <br/>
 Multilevel refers to `Child -> Parent Class -> Grandparent Class -> ...`
 
 **Multilevel Inheritance**
