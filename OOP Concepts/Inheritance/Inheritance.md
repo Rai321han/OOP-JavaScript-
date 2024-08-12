@@ -80,10 +80,9 @@ const ford = new Ford("Ford"); // Error: this is undefined
 
 Now as soon as we execute `const ford = new Ford("Ford")`, we'll get an error because `this` is undefined.
 
-When we run a regular function with `new` keyword, it creates an empty object and assigns it to `this`.
-But when a **derived** constructor (here, the constructor of Ford class) runs, it doesn't do this.
-It expects the parent constructor to do this job.
-So, we need to call `super()` inside derived constructor to define `this`.
+- When we run a regular function with `new` keyword, it creates an empty object and assigns it to `this`.
+- But when a **derived** constructor (here, the constructor of Ford class) runs, it doesn't do this. It expects the parent constructor to do this job.
+  So, we need to call `super()` inside derived constructor to define `this`.
 
 ```js
 class Ford extends Car {
