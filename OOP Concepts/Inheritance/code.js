@@ -8,7 +8,7 @@
 // First make a general Car class which is going to be a parent class.
 class Car {
   constructor(name) {
-    this.name = name;
+    this.name = "Car";
   }
   start() {
     console.log(`${this.name} has started`);
@@ -27,6 +27,9 @@ car.stop(); //Car has stopped
 
 ///
 class Ford extends Car {
+  constructor(name) {
+    this.name = name;
+  }
   selfDrive() {
     console.log(`${this.name} is in self driving mode`);
   }

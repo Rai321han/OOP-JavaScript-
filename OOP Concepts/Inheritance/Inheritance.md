@@ -53,3 +53,50 @@ So **Ford** class has **inherited** the properties of **Car** class.
 
 > [!NOTE]
 > Only Single inheritance is possible in JavaScript. One object can have only one `[[Prototype]]`, so multiple inheritance is not possible. Still there is way to do this using `Mixin`. I'll cover this concept later.
+
+## super keyword
+
+`super()` is used to invoke the superclass constructor.
+`super.<methodname>` is used to invoke the superclass method.
+
+Why do we need `super`?
+
+In the above example, you can see that `Ford` class doesn't have constructor. If a child class doesn't have constructor and a object of that class is initiated, it's superclass constructor invokes automatically.
+
+So, what will happen if the child class (here `Ford`) also have a constructor? Like this:
+
+```js
+class Ford extends Car {
+  constructor(name) {
+    this.name = name;
+  }
+  selfDrive() {
+    console.log(`${this.name} is in self driving mode`);
+  }
+}
+
+const ford = new Ford("Ford"); // Error: this is undefined
+```
+
+Now as soon as we execute `const ford = new Ford("Ford")`, we'll get an error because `this` is undefined.
+
+When we run a regular function with `new` keyword, it creates an empty object and assigns it to `this`.
+But when a **derived** constructor (here, the constructor of Ford class) runs, it doesn't do this.
+It expects the parent constructor to do this job.
+So, we need to call `super()` inside derived constructor to define `this`.
+
+```js
+class Ford extends Car {
+  constructor(name) {
+    super(); // parent constructor is invoked
+    this.name = name;
+  }
+  selfDrive() {
+    console.log(`${this.name} is in self driving mode`);
+  }
+}
+
+const ford = new Ford("Ford"); // now it works!
+```
+
+Next -> [Multilevel Inheritance](/OOP%20Concepts/Inheritance/Multilevel_Inheritance.md)
