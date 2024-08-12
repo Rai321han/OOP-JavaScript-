@@ -61,3 +61,5 @@ vugatti.stop(); //Vugatti-M1 has stopped
 So, the child class is `ModernCar`, it's parent class is `ClassicCar` and grandparent class is `Car`.
 As child class `ModernCar` inherited properties from it's parent and grandparent, child class object can access all the properties existed on parent and grandparent classes.
 So it's a two level inheritance.
+
+Next -> [Association](/OOP%20Concepts/Inheritance/Association.md)
