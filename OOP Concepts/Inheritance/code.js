@@ -48,30 +48,70 @@
 
 // Aggregation
 
-class SoundSystem {
-  constructor(highestSound) {
-    this.highest = highestSound;
-  }
-  soundOn() {
-    console.log("Sound is on");
-  }
+// class SoundSystem {
+//   constructor(highestSound) {
+//     this.highest = highestSound;
+//   }
+//   soundOn() {
+//     console.log("Sound is on");
+//   }
 
-  soundOff() {
-    console.log("Sound is off");
+//   soundOff() {
+//     console.log("Sound is off");
+//   }
+// }
+
+// class TV {
+//   constructor(highestSound) {
+//     this.sound = new SoundSystem(highestSound);
+//   }
+//   turnOn() {
+//     console.log("TV is turned on");
+//   }
+//   turnOff() {
+//     console.log("TV is turned off");
+//   }
+// }
+
+// const PanasonicTV = new TV(10);
+// PanasonicTV.sound.soundOn();
+
+// Multilevel
+
+class Car {
+  constructor(name) {
+    this.name = name;
+  }
+  start() {
+    console.log(`${this.name} has started`);
+  }
+  stop() {
+    console.log(`${this.name} has stopped`);
   }
 }
 
-class TV {
-  constructor(highestSound) {
-    this.sound = new SoundSystem(highestSound);
+class ClassicCar extends Car {
+  constructor(name) {
+    super(name);
+    this.name = name;
   }
-  turnOn() {
-    console.log("TV is turned on");
-  }
-  turnOff() {
-    console.log("TV is turned off");
+  highSpeedMode() {
+    console.log(`${this.name} enabled highspeed mode.`);
   }
 }
 
-const PanasonicTV = new TV(10);
-PanasonicTV.sound.soundOn();
+class ModernCar extends ClassicCar {
+  constructor(name) {
+    super(name);
+    this.name = name;
+  }
+  ultraHighSpeedMode() {
+    console.log(`${this.name} enabled ultra highspeed mode.`);
+  }
+}
+
+const vugatti = new ModernCar("Vugatti-M1");
+vugatti.start(); //Vugatti-M1 has started
+vugatti.highSpeedMode(); //Vugatti-M1 enabled highspeed mode.
+vugatti.ultraHighSpeedMode(); //Vugatti-M1 enabled ultra highspeed mode.
+vugatti.stop(); //Vugatti-M1 has stopped
