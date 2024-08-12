@@ -98,4 +98,4 @@ class Ford extends Car {
 const ford = new Ford("Ford"); // now it works!
 ```
 
-Next -> [Aggregation & Composition](/OOP%20Concepts/Inheritance/Aggregation_&_Composition.md)
+Next -> [Multilevel Inheritance](/OOP%20Concepts/Inheritance/Multilevel_Inheritance.md)
