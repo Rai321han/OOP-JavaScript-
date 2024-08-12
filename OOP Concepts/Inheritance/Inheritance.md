@@ -51,4 +51,5 @@ So even if we have not defined start and stop method in the Ford class, due to `
 it finds the start and stop method from `Car.prototype`.
 So **Ford** class has **inherited** the properties of **Car** class.
 
-> :warning: **Warning:** Only Single inheritance is possible in JavaScript. One object can have only one `[[Prototype]]`, so multiple inheritance is not possible. Still there is way to do this using `Mixin`. I'll cover this concept later.
+> [!NOTE]
+> Only Single inheritance is possible in JavaScript. One object can have only one `[[Prototype]]`, so multiple inheritance is not possible. Still there is way to do this using `Mixin`. I'll cover this concept later.
