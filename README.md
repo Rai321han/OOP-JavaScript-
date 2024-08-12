@@ -24,11 +24,12 @@ The goal of this project is to learn Object Oriented Programming in JavaScript a
 #### JavaScript Inheritance
 
 - [x] [Inheritance](/OOP%20Concepts/Inheritance/Inheritance.md)
+- [x] [Multilevel Inheritance](/OOP%20Concepts/Inheritance/Multilevel_Inheritance.md)
 - [x] [Association](/OOP%20Concepts/Inheritance/Association.md)
-- [ ] Multilevel Inheritance
 
 #### JavaScript Polymorphism
 
+- [ ] Polymorphism
 - [ ] Method Overloading
 - [ ] Method Overriding
 - [ ] Compile-time vs Runtime Polymorphism
