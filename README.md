@@ -23,7 +23,7 @@ The goal of this project is to learn Object Oriented Programming in JavaScript a
 
 #### JavaScript Inheritance
 
-- [ ] Inheritance
+- [x] [Inheritance](/OOP%20Concepts/Inheritance/Inheritance.md)
 - [ ] Aggregation
 - [ ] Single Inheritance
 - [ ] Multilevel Inheritance
