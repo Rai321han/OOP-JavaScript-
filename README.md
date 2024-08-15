@@ -33,7 +33,6 @@ The goal of this project is to learn Object Oriented Programming in JavaScript a
 - [x] [Method Overriding](/OOP%20Concepts/Polymorphism/overriding.md)
 - [x] [Method Overloading](/OOP%20Concepts/Polymorphism/overloading.md)
 - [x] [Compile-time vs Runtime Polymorphism](/OOP%20Concepts/Polymorphism/compile_vs_runtime_polymorphism.md)
-- [ ] Dynamic Binding
 
 #### JavaScript Abstraction
 
