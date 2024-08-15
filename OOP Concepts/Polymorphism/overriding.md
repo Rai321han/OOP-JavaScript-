@@ -70,5 +70,5 @@ This way, we can reuse the implementation of the parent method and also extend t
 
 ## So why do we need method overriding?
 
-_1. Extensibility and Reusability_ : We can reuse the code from the parent or super class method and even extend the inherited functionality.
+_1. Extensibility and Reusability_ : We can reuse the code from the parent or super class method and even extend the inherited functionality.<br/>
 _2. Flexibility_ : By allowing us to provide our own implementation in the subclass, method overriding improves flexibility.
