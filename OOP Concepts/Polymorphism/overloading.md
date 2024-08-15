@@ -19,10 +19,9 @@ class Math {
 }
 ```
 
-Unlike other object oriented programming language, _JavaScript doesn't support method Overloading_ 🙂.
-Because if we define two or more function with the same name in JS, then the method that is defined at last will override the previous functions. So there will be only one function with an unique name.
-<br/>
-_STILL WE CAN ACHIEVE METHOD OVERLOADING USING ANOTHER APPROACH!_
+> > Unlike other object oriented programming language, **JavaScript doesn't support method Overloadin** 🙂. <br/>
+> > Because if we define two or more function with the same name in JS, then the method that is defined at last will override the previous functions. So there will be only one function with an unique name.
+> > <br/> > > **STILL WE CAN ACHIEVE METHOD OVERLOADING USING ANOTHER APPROACH!**
 
 ## A way to achieve method overloading in JS
 
