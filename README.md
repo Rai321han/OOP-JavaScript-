@@ -29,7 +29,7 @@ The goal of this project is to learn Object Oriented Programming in JavaScript a
 
 #### JavaScript Polymorphism
 
-- [ ] Polymorphism
+- [x] [Polymorphism](/OOP%20Concepts/Polymorphism/Polymorphism.md)
 - [ ] Method Overloading
 - [ ] Method Overriding
 - [ ] Compile-time vs Runtime Polymorphism
