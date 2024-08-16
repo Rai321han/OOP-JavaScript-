@@ -40,7 +40,7 @@ The goal of this project is to learn Object Oriented Programming in JavaScript a
 - [ ] Interface
 - [ ] Abstract vs Interface
 
-#### JavaSceipt Encapsulation
+#### JavaScript Encapsulation
 
 - [ ] Access Modifier
 - [ ] Encapsulation
