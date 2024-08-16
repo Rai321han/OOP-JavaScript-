@@ -36,7 +36,7 @@ The goal of this project is to learn Object Oriented Programming in JavaScript a
 
 #### JavaScript Abstraction
 
-- [ ] Abstract Class
+- [x] [Abstraction](/OOP%20Concepts/Abstraction/Abstraction.md)
 - [ ] Interface
 - [ ] Abstract vs Interface
 
@@ -44,3 +44,12 @@ The goal of this project is to learn Object Oriented Programming in JavaScript a
 
 - [ ] Access Modifier
 - [ ] Encapsulation
+
+#### Extras
+
+- [ ] SOLID Principle Introduction
+- [ ] Single-responsibility Principle
+- [ ] Open-closed Principle
+- [ ] Liskov Substitution Principle
+- [ ] Interface Segregation Principle
+- [ ] Dependency Inversion Principle
