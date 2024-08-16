@@ -37,8 +37,8 @@ The goal of this project is to learn Object Oriented Programming in JavaScript a
 #### JavaScript Abstraction
 
 - [x] [Abstraction](/OOP%20Concepts/Abstraction/Abstraction.md)
-- [ ] Interface
-- [ ] Abstract vs Interface
+- [x] [Interface](/OOP%20Concepts/Abstraction/Interface.md)
+- [x] [Abstract vs Interface](/OOP%20Concepts/Abstraction/abstract%20vs%20interface.md)
 
 #### JavaScript Encapsulation
 
