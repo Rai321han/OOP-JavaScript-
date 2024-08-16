@@ -265,3 +265,5 @@ urbanKFC.deliverFood(); // Delivering food by bike at Urban KFC branch.
 suburbanKFC.prepareRecipe(); // Preparing food using the secret KFC recipe at Suburban KFC branch.
 suburbanKFC.deliverFood(); // Delivering food by car at Suburban KFC branch.
 ```
+
+Next -> [Interface](/OOP%20Concepts/Abstraction/Interface.md)
