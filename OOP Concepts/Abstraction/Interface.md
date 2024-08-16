@@ -22,7 +22,7 @@ class Vehicle {
     if (this.constructor === Vehicle)
       throw new Error("Cannot create instance of Interface.");
 
-    // here start is our abstract method which is not implemented in the interface, so it is called abstract method.
+    // here start and stop are abstract method.
     if (this.start === undefined)
       throw new Error("Must override method 'start'.");
     if (this.stop === undefined)
@@ -41,7 +41,7 @@ class Bike extends Vehicle {
 const bike = new Bike("Bike"); // Error: Must override method 'start'
 ```
 
-As we can see, if we don't override the methods comming from the Interface, we will get error, saying us to override those methods.
+As we can see, if we don't override the methods coming from the Interface, we will get error, saying us to override those methods.
 <br/>
 After overriding those methods:
 
@@ -67,8 +67,11 @@ bike.stop(); // Bike has stopped
 
 > [!WARNING]
 > As we said earlier, JS doesn't have built-in support for Interface. Here, we are just simulating the idea.
-> You can see that we haven't actually declared those abstract methods (`start` & `stop`) inside the our so called Interface class.
+> You can see that we haven't actually declared those abstract methods (`start` & `stop`) inside our so called Interface class.
 > We are just checking if `this.start` and `this.stop` is defined or not. <br/>
 > The autocomplete or snippet cannot understand that those are abstract methods.
 > So, IDE cannot help us to know which methods we need to override if we don't know the actual implementation of the Interface.
-> If you want to learn more about Interface, pick other OOP language like C++, Java etc.
+> Again, in other OOP language like C++, Java, it is common to implement (meaning extending) multiple Interface. But we cannot do that in JavaScript because JavaScript doesn't support multiple inheritance.
+> If you want to learn about true Interface, pick other OOP language like C++, Java etc.
+
+Next -> [Abstract class vs Interface](/OOP%20Concepts/Abstraction/abstract%20vs%20interface.md)
