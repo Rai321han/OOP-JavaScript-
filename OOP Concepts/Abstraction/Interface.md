@@ -65,10 +65,10 @@ bike.start(); // Bike has started
 bike.stop(); // Bike has stopped
 ```
 
-> [!WARNING]
+> [!CAUTION]
 > As we said earlier, JS doesn't have built-in support for Interface. Here, we are just simulating the idea.
 > You can see that we haven't actually declared those abstract methods (`start` & `stop`) inside our so called Interface class.
-> We are just checking if `this.start` and `this.stop` is defined or not. <br/>
+> We are just checking if `this.start` and `this.stop` is defined or not.
 > The autocomplete or snippet cannot understand that those are abstract methods.
 > So, IDE cannot help us to know which methods we need to override if we don't know the actual implementation of the Interface.
 > Again, in other OOP language like C++, Java, it is common to implement (meaning extending) multiple Interface. But we cannot do that in JavaScript because JavaScript doesn't support multiple inheritance.
