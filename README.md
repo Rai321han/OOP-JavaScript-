@@ -42,10 +42,10 @@ The goal of this project is to learn Object Oriented Programming in JavaScript a
 
 #### JavaScript Encapsulation
 
-- [ ] Access Modifier
-- [ ] Encapsulation
+- [x] [Encapsulation](/OOP%20Concepts/Encapsulation/encapsulation.md)
+- [x] [Access Modifier](/OOP%20Concepts/Encapsulation/access_modifiers.md)
 
-#### Extras
+#### SOLID Principles
 
 - [ ] SOLID Principle Introduction
 - [ ] Single-responsibility Principle
