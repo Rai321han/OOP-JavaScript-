@@ -1,6 +1,6 @@
 # Object Oriented Programming <br> using JavaScript
 
-The goal of this project is to learn Object Oriented Programming in JavaScript and creating a better resource for OOP using JavaScript.
+The goal of this project is to learn Object Oriented Programming in JavaScript and create a better resource for OOP using JavaScript.
 
 ## Topics
 

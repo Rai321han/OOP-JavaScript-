@@ -23,7 +23,7 @@ function userCreate(name, id) {
 }
 ```
 
-We can now create new user calling `userCreate` function and display the information invoking the display function on the user instance.
+We can now create new user by calling `userCreate` function and display the information invoking the display function on the user instance.
 
 ```js
 const user1 = userCreate("Raihan", 1911023);
