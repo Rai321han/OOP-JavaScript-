@@ -14,6 +14,7 @@ The goal of this project is to learn Object Oriented Programming in JavaScript a
 - [x] [_this_ keyword](/Starting%20Concepts/this_Keyword.md)
 - [ ] _new_ keyword
 - [ ] Class and Object
+- [ ] static keyword
 
 ---
 
@@ -45,11 +46,11 @@ The goal of this project is to learn Object Oriented Programming in JavaScript a
 - [x] [Encapsulation](/OOP%20Concepts/Encapsulation/encapsulation.md)
 - [x] [Access Modifier](/OOP%20Concepts/Encapsulation/access_modifiers.md)
 
-#### SOLID Principles
+#### SOLID Principles (TypeScript)
 
-- [ ] SOLID Principle Introduction
-- [ ] Single-responsibility Principle
-- [ ] Open-closed Principle
-- [ ] Liskov Substitution Principle
-- [ ] Interface Segregation Principle
-- [ ] Dependency Inversion Principle
+- [x] [SOLID Principle Introduction](/OOP%20Concepts/SOLID_Principles/Introduction.md)
+- [x] [Single-responsibility Principle](/OOP%20Concepts/SOLID_Principles/SRP.md)
+- [x] [Open-closed Principle](/OOP%20Concepts/SOLID_Principles/OCP.md)
+- [x] [Liskov Substitution Principle](/OOP%20Concepts/SOLID_Principles/LSP.md)
+- [x] [Interface Segregation Principle](/OOP%20Concepts/SOLID_Principles/ISP.md)
+- [x] [Dependency Inversion Principle](/OOP%20Concepts/SOLID_Principles/DIP.md)
